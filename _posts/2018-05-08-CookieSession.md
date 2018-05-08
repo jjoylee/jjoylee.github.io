@@ -4,7 +4,7 @@ title: 쿠키와 세션
 tags: [TIL]
 ---
 HTTP 프로토콜의 단점
-- Connectionless : 클라이언트가 request를 서버에 보내고, 서버는 클라이언트애개 response하면 접속을 끊는다. 
+- Connectionless : 클라이언트가 request를 서버에 보내고, 서버는 클라이언트에게 response하면 접속을 끊는다. 
 - Stateless : 접속으 끊는 순간 클라이언트와 서버의 통신은 끝나고 상태 정보는 유지되지 않는다.
 
 So! 통신을 할 때마다 계속 사용자를 인증해야한다. 
