@@ -37,13 +37,15 @@ public abstract class Pizza
 
             case PizzaType.Seafood:
                 return new SeafoodPizza();
+
+            throw new System.NotSupportedException("The pizza type is not recognized.");
         }
     }       
 }
 ```
 
 2. Child Classes
-``` 
+```
 public class HamAndMushroomPizza : Pizza
 {
     private decimal price = 8.5m;
@@ -62,7 +64,16 @@ public class SeafoodPizza : Pizza
     public override decimal GetPrice(){ return price; }
 }
 ```
-
-
+3. Main Method
+```
+static void Main(string[] args)
+{
+    // if pizza type change
+    // you change only Pizza.PizzaType part
+    Pizza pizza = Pizza.PizzaFactory(Pizza.PizzaType.Seafood);
+    Console.WriteLine(pizza.GetPrice().ToString("C2"));
+    // 11.5
+}
+```
 
 
