@@ -18,7 +18,7 @@ Encapsulating Object creation
 하위 클래스가 어떤 객체를 생성할지 결정한다.
 
 1. Pizza Class (abstract class)
-``` 
+~~~
 public abstract class Pizza
 {
     public abstract decimal GetPrice();
@@ -42,10 +42,10 @@ public abstract class Pizza
         }
     }       
 }
-```
+~~~
 
 2. Child Classes
-```
+~~~
 public class HamAndMushroomPizza : Pizza
 {
     private decimal price = 8.5m;
@@ -63,11 +63,11 @@ public class SeafoodPizza : Pizza
     private decimal price = 11.5m;
     public override decimal GetPrice(){ return price; }
 }
-```
+~~~
 
 3. Main Method
 
-```
+~~~
 static void Main(string[] args)
 {
     // if pizza type change
@@ -76,6 +76,6 @@ static void Main(string[] args)
     Console.WriteLine(pizza.GetPrice().ToString("C2"));
     // 11.5
 }
-```
+~~~
 
 
