@@ -46,6 +46,7 @@ public abstract class Pizza
 
 
 2. Child Classes
+
 ~~~
 public class HamAndMushroomPizza : Pizza
 {
@@ -65,7 +66,6 @@ public class SeafoodPizza : Pizza
     public override decimal GetPrice(){ return price; }
 }
 ~~~
-
 
 3. Main Method
 
